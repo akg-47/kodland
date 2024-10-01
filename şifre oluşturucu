@@ -1,0 +1,12 @@
+import random
+
+char = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+char_length = int(input("şifreniz kaç karakter olmalı: "))
+
+password = ""
+
+for i in range(char_length):
+    password += random.choice(char)
+
+print("şifreniz:", password)    
